@@ -1,0 +1,86 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <EnableDefaultItems>false</EnableDefaultItems>
+	<DefineSilverlight>true</DefineSilverlight>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenSilver" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="App.xaml.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="CardImageConverter.cs" />
+    <Compile Include="MainPage.xaml.cs" />
+    <Compile Include="Suit.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\c01.png" />
+    <Content Include="Images\c02.png" />
+    <Content Include="Images\c03.png" />
+    <Content Include="Images\c04.png" />
+    <Content Include="Images\c05.png" />
+    <Content Include="Images\c06.png" />
+    <Content Include="Images\c07.png" />
+    <Content Include="Images\c08.png" />
+    <Content Include="Images\c09.png" />
+    <Content Include="Images\c10.png" />
+    <Content Include="Images\c11.png" />
+    <Content Include="Images\c12.png" />
+    <Content Include="Images\c13.png" />
+    <Content Include="Images\d01.png" />
+    <Content Include="Images\d02.png" />
+    <Content Include="Images\d03.png" />
+    <Content Include="Images\d04.png" />
+    <Content Include="Images\d05.png" />
+    <Content Include="Images\d06.png" />
+    <Content Include="Images\d07.png" />
+    <Content Include="Images\d08.png" />
+    <Content Include="Images\d09.png" />
+    <Content Include="Images\d10.png" />
+    <Content Include="Images\d11.png" />
+    <Content Include="Images\d12.png" />
+    <Content Include="Images\d13.png" />
+    <Content Include="Images\h01.png" />
+    <Content Include="Images\h02.png" />
+    <Content Include="Images\h03.png" />
+    <Content Include="Images\h04.png" />
+    <Content Include="Images\h05.png" />
+    <Content Include="Images\h06.png" />
+    <Content Include="Images\h07.png" />
+    <Content Include="Images\h08.png" />
+    <Content Include="Images\h09.png" />
+    <Content Include="Images\h10.png" />
+    <Content Include="Images\h11.png" />
+    <Content Include="Images\h12.png" />
+    <Content Include="Images\h13.png" />
+    <Content Include="Images\joker.png" />
+    <Content Include="Images\s01.png" />
+    <Content Include="Images\s02.png" />
+    <Content Include="Images\s03.png" />
+    <Content Include="Images\s04.png" />
+    <Content Include="Images\s05.png" />
+    <Content Include="Images\s06.png" />
+    <Content Include="Images\s07.png" />
+    <Content Include="Images\s08.png" />
+    <Content Include="Images\s09.png" />
+    <Content Include="Images\s10.png" />
+    <Content Include="Images\s11.png" />
+    <Content Include="Images\s12.png" />
+    <Content Include="Images\s13.png" />
+  </ItemGroup>
+  
+</Project>

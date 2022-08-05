@@ -1,0 +1,33 @@
+﻿<UserControl
+    x:Class="Millionaire.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Millionaire"
+    Width="108" Height="412"
+    Loaded="UserControl_Loaded">
+    <UserControl.Resources>
+        <local:CardImageConverter x:Key="cardImageConverter" />
+        <Style x:Key="CardPreview" TargetType="Image">
+            <Setter Property="Margin" Value="1,1,1,1"/>
+            <Setter Property="Width" Value="43"/>
+            <Setter Property="Height" Value="60"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="55"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="CardList" Grid.Row="0" Grid.Column="0" Background="LightGray">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding Converter={StaticResource cardImageConverter}}" Style="{StaticResource CardPreview}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="ShuffleButton" Grid.Row="0" Grid.Column="1" Content="Shuffle" Click="ShuffleButton_Click" />
+    </Grid>
+</UserControl>

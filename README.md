@@ -1,1 +1,1 @@
-# MillionaireSolution
+OpenSilver_Millionaire
